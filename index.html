@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <section class="controls">
+            <input type="text" id="searchInput" placeholder="Search By Name or Symbol"
+                aria-label="Search cryptocurrency by name or symbol">
+
+            <button id="marketCapBtn">Sort By Mkt Cap</button>
+            <button id="percentageBtn">Sort by percentage</button>
+        </section>
+
+        <p id="status" role="status">Loading cryptocurrency data...</p>
+
+        <div class="table-container">
+            <table>
+                <tbody id="coinTable"></tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>

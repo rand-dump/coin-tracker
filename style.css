@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #191919;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 26px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 3fr 0.95fr 0.95fr;
+  gap: 12px;
+  margin-bottom: 95px;
+}
+
+.controls input,
+.controls button {
+  height: 55px;
+  background: #191919;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 0 18px;
+  font-size: 15px;
+}
+
+.controls input {
+  min-width: 0;
+}
+
+.controls input::placeholder {
+  color: #999;
+}
+
+.controls button {
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #303030;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+tr {
+  border-bottom: 1px solid #c9c9c9;
+}
+
+td {
+  padding: 26px 12px;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+}
+
+.coin-name img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.positive {
+  color: #00bd22;
+}
+
+.negative {
+  color: #ff1717;
+}
+
+#status {
+  margin-top: -65px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 14px;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+    margin-bottom: 35px;
+  }
+
+  #status {
+    margin-top: 0;
+  }
+}
